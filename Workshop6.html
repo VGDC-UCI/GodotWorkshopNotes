@@ -1,0 +1,252 @@
+<html>
+<head>
+	<style>
+		/* PrismJS 1.17.1
+		https://prismjs.com/download.html#themes=prism-tomorrow&languages=clike+csharp+gdscript */
+		/**
+		 * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+		 * Based on https://github.com/chriskempson/tomorrow-theme
+		 * @author Rose Pritchard
+		 */
+		
+		code[class*="language-"],
+		pre[class*="language-"] {
+			color: #ccc;
+			background: none;
+			font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+			font-size: 1em;
+			text-align: left;
+			white-space: pre;
+			word-spacing: normal;
+			word-break: normal;
+			word-wrap: normal;
+			line-height: 1.5;
+		
+			-moz-tab-size: 4;
+			-o-tab-size: 4;
+			tab-size: 4;
+		
+			-webkit-hyphens: none;
+			-moz-hyphens: none;
+			-ms-hyphens: none;
+			hyphens: none;
+		
+		}
+		
+		/* Code blocks */
+		pre[class*="language-"] {
+			padding: 1em;
+			margin: .5em 0;
+			overflow: auto;
+		}
+		
+		:not(pre) > code[class*="language-"],
+		pre[class*="language-"] {
+			background: #2d2d2d;
+		}
+		
+		/* Inline code */
+		:not(pre) > code[class*="language-"] {
+			padding: .1em;
+			border-radius: .3em;
+			white-space: normal;
+		}
+		
+		.token.comment,
+		.token.block-comment,
+		.token.prolog,
+		.token.doctype,
+		.token.cdata {
+			color: #999;
+		}
+		
+		.token.punctuation {
+			color: #ccc;
+		}
+		
+		.token.tag,
+		.token.attr-name,
+		.token.namespace,
+		.token.deleted {
+			color: #e2777a;
+		}
+		
+		.token.function-name {
+			color: #6196cc;
+		}
+		
+		.token.boolean,
+		.token.number,
+		.token.function {
+			color: #f08d49;
+		}
+		
+		.token.property,
+		.token.class-name,
+		.token.constant,
+		.token.symbol {
+			color: #f8c555;
+		}
+		
+		.token.selector,
+		.token.important,
+		.token.atrule,
+		.token.keyword,
+		.token.builtin {
+			color: #cc99cd;
+		}
+		
+		.token.string,
+		.token.char,
+		.token.attr-value,
+		.token.regex,
+		.token.variable {
+			color: #7ec699;
+		}
+		
+		.token.operator,
+		.token.entity,
+		.token.url {
+			color: #67cdcc;
+		}
+		
+		.token.important,
+		.token.bold {
+			font-weight: bold;
+		}
+		.token.italic {
+			font-style: italic;
+		}
+		
+		.token.entity {
+			cursor: help;
+		}
+		
+		.token.inserted {
+			color: green;
+		}
+	</style>
+</head>
+
+<body>
+<script type="text/javascript">
+/* PrismJS 1.17.1
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=clike+csharp+gdscript */
+var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(u){var c=/\blang(?:uage)?-([\w-]+)\b/i,r=0;var _={manual:u.Prism&&u.Prism.manual,disableWorkerMessageHandler:u.Prism&&u.Prism.disableWorkerMessageHandler,util:{encode:function(e){return e instanceof L?new L(e.type,_.util.encode(e.content),e.alias):Array.isArray(e)?e.map(_.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).slice(8,-1)},objId:function(e){return e.__id||Object.defineProperty(e,"__id",{value:++r}),e.__id},clone:function n(e,t){var a,r,i=_.util.type(e);switch(t=t||{},i){case"Object":if(r=_.util.objId(e),t[r])return t[r];for(var o in a={},t[r]=a,e)e.hasOwnProperty(o)&&(a[o]=n(e[o],t));return a;case"Array":return r=_.util.objId(e),t[r]?t[r]:(a=[],t[r]=a,e.forEach(function(e,r){a[r]=n(e,t)}),a);default:return e}},currentScript:function(){if("undefined"==typeof document)return null;if("currentScript"in document)return document.currentScript;try{throw new Error}catch(e){var r=(/at [^(\r\n]*\((.*):.+:.+\)$/i.exec(e.stack)||[])[1];if(r){var n=document.getElementsByTagName("script");for(var t in n)if(n[t].src==r)return n[t]}return null}}},languages:{extend:function(e,r){var n=_.util.clone(_.languages[e]);for(var t in r)n[t]=r[t];return n},insertBefore:function(n,e,r,t){var a=(t=t||_.languages)[n],i={};for(var o in a)if(a.hasOwnProperty(o)){if(o==e)for(var l in r)r.hasOwnProperty(l)&&(i[l]=r[l]);r.hasOwnProperty(o)||(i[o]=a[o])}var s=t[n];return t[n]=i,_.languages.DFS(_.languages,function(e,r){r===s&&e!=n&&(this[e]=i)}),i},DFS:function e(r,n,t,a){a=a||{};var i=_.util.objId;for(var o in r)if(r.hasOwnProperty(o)){n.call(r,o,r[o],t||o);var l=r[o],s=_.util.type(l);"Object"!==s||a[i(l)]?"Array"!==s||a[i(l)]||(a[i(l)]=!0,e(l,n,o,a)):(a[i(l)]=!0,e(l,n,null,a))}}},plugins:{},highlightAll:function(e,r){_.highlightAllUnder(document,e,r)},highlightAllUnder:function(e,r,n){var t={callback:n,selector:'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'};_.hooks.run("before-highlightall",t);for(var a,i=e.querySelectorAll(t.selector),o=0;a=i[o++];)_.highlightElement(a,!0===r,t.callback)},highlightElement:function(e,r,n){var t=function(e){for(;e&&!c.test(e.className);)e=e.parentNode;return e?(e.className.match(c)||[,"none"])[1].toLowerCase():"none"}(e),a=_.languages[t];e.className=e.className.replace(c,"").replace(/\s+/g," ")+" language-"+t;var i=e.parentNode;i&&"pre"===i.nodeName.toLowerCase()&&(i.className=i.className.replace(c,"").replace(/\s+/g," ")+" language-"+t);var o={element:e,language:t,grammar:a,code:e.textContent};function l(e){o.highlightedCode=e,_.hooks.run("before-insert",o),o.element.innerHTML=o.highlightedCode,_.hooks.run("after-highlight",o),_.hooks.run("complete",o),n&&n.call(o.element)}if(_.hooks.run("before-sanity-check",o),!o.code)return _.hooks.run("complete",o),void(n&&n.call(o.element));if(_.hooks.run("before-highlight",o),o.grammar)if(r&&u.Worker){var s=new Worker(_.filename);s.onmessage=function(e){l(e.data)},s.postMessage(JSON.stringify({language:o.language,code:o.code,immediateClose:!0}))}else l(_.highlight(o.code,o.grammar,o.language));else l(_.util.encode(o.code))},highlight:function(e,r,n){var t={code:e,grammar:r,language:n};return _.hooks.run("before-tokenize",t),t.tokens=_.tokenize(t.code,t.grammar),_.hooks.run("after-tokenize",t),L.stringify(_.util.encode(t.tokens),t.language)},matchGrammar:function(e,r,n,t,a,i,o){for(var l in n)if(n.hasOwnProperty(l)&&n[l]){var s=n[l];s=Array.isArray(s)?s:[s];for(var u=0;u<s.length;++u){if(o&&o==l+","+u)return;var c=s[u],g=c.inside,f=!!c.lookbehind,d=!!c.greedy,h=0,m=c.alias;if(d&&!c.pattern.global){var p=c.pattern.toString().match(/[imsuy]*$/)[0];c.pattern=RegExp(c.pattern.source,p+"g")}c=c.pattern||c;for(var y=t,v=a;y<r.length;v+=r[y].length,++y){var k=r[y];if(r.length>e.length)return;if(!(k instanceof L)){if(d&&y!=r.length-1){if(c.lastIndex=v,!(O=c.exec(e)))break;for(var b=O.index+(f&&O[1]?O[1].length:0),w=O.index+O[0].length,A=y,P=v,x=r.length;A<x&&(P<w||!r[A].type&&!r[A-1].greedy);++A)(P+=r[A].length)<=b&&(++y,v=P);if(r[y]instanceof L)continue;S=A-y,k=e.slice(v,P),O.index-=v}else{c.lastIndex=0;var O=c.exec(k),S=1}if(O){f&&(h=O[1]?O[1].length:0);w=(b=O.index+h)+(O=O[0].slice(h)).length;var j=k.slice(0,b),N=k.slice(w),E=[y,S];j&&(++y,v+=j.length,E.push(j));var C=new L(l,g?_.tokenize(O,g):O,m,O,d);if(E.push(C),N&&E.push(N),Array.prototype.splice.apply(r,E),1!=S&&_.matchGrammar(e,r,n,y,v,!0,l+","+u),i)break}else if(i)break}}}}},tokenize:function(e,r){var n=[e],t=r.rest;if(t){for(var a in t)r[a]=t[a];delete r.rest}return _.matchGrammar(e,n,r,0,0,!1),n},hooks:{all:{},add:function(e,r){var n=_.hooks.all;n[e]=n[e]||[],n[e].push(r)},run:function(e,r){var n=_.hooks.all[e];if(n&&n.length)for(var t,a=0;t=n[a++];)t(r)}},Token:L};function L(e,r,n,t,a){this.type=e,this.content=r,this.alias=n,this.length=0|(t||"").length,this.greedy=!!a}if(u.Prism=_,L.stringify=function(e,r){if("string"==typeof e)return e;if(Array.isArray(e))return e.map(function(e){return L.stringify(e,r)}).join("");var n={type:e.type,content:L.stringify(e.content,r),tag:"span",classes:["token",e.type],attributes:{},language:r};if(e.alias){var t=Array.isArray(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(n.classes,t)}_.hooks.run("wrap",n);var a=Object.keys(n.attributes).map(function(e){return e+'="'+(n.attributes[e]||"").replace(/"/g,"&quot;")+'"'}).join(" ");return"<"+n.tag+' class="'+n.classes.join(" ")+'"'+(a?" "+a:"")+">"+n.content+"</"+n.tag+">"},!u.document)return u.addEventListener&&(_.disableWorkerMessageHandler||u.addEventListener("message",function(e){var r=JSON.parse(e.data),n=r.language,t=r.code,a=r.immediateClose;u.postMessage(_.highlight(t,_.languages[n],n)),a&&u.close()},!1)),_;var e=_.util.currentScript();if(e&&(_.filename=e.src,e.hasAttribute("data-manual")&&(_.manual=!0)),!_.manual){function n(){_.manual||_.highlightAll()}var t=document.readyState;"loading"===t||"interactive"===t&&e&&e.defer?document.addEventListener("DOMContentLoaded",n):window.requestAnimationFrame?window.requestAnimationFrame(n):window.setTimeout(n,16)}return _}(_self);"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+Prism.languages.clike={comment:[{pattern:/(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/,lookbehind:!0},{pattern:/(^|[^\\:])\/\/.*/,lookbehind:!0,greedy:!0}],string:{pattern:/(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,greedy:!0},"class-name":{pattern:/(\b(?:class|interface|extends|implements|trait|instanceof|new)\s+|\bcatch\s+\()[\w.\\]+/i,lookbehind:!0,inside:{punctuation:/[.\\]/}},keyword:/\b(?:if|else|while|do|for|return|in|instanceof|function|new|try|throw|catch|finally|null|break|continue)\b/,boolean:/\b(?:true|false)\b/,function:/\w+(?=\()/,number:/\b0x[\da-f]+\b|(?:\b\d+\.?\d*|\B\.\d+)(?:e[+-]?\d+)?/i,operator:/[<>]=?|[!=]=?=?|--?|\+\+?|&&?|\|\|?|[?*/~^%]/,punctuation:/[{}[\];(),.:]/};
+Prism.languages.csharp=Prism.languages.extend("clike",{keyword:/\b(?:abstract|add|alias|as|ascending|async|await|base|bool|break|byte|case|catch|char|checked|class|const|continue|decimal|default|delegate|descending|do|double|dynamic|else|enum|event|explicit|extern|false|finally|fixed|float|for|foreach|from|get|global|goto|group|if|implicit|in|int|interface|internal|into|is|join|let|lock|long|namespace|new|null|object|operator|orderby|out|override|params|partial|private|protected|public|readonly|ref|remove|return|sbyte|sealed|select|set|short|sizeof|stackalloc|static|string|struct|switch|this|throw|true|try|typeof|uint|ulong|unchecked|unsafe|ushort|using|value|var|virtual|void|volatile|where|while|yield)\b/,string:[{pattern:/@("|')(?:\1\1|\\[\s\S]|(?!\1)[^\\])*\1/,greedy:!0},{pattern:/("|')(?:\\.|(?!\1)[^\\\r\n])*?\1/,greedy:!0}],"class-name":[{pattern:/\b[A-Z]\w*(?:\.\w+)*\b(?=\s+\w+)/,inside:{punctuation:/\./}},{pattern:/(\[)[A-Z]\w*(?:\.\w+)*\b/,lookbehind:!0,inside:{punctuation:/\./}},{pattern:/(\b(?:class|interface)\s+[A-Z]\w*(?:\.\w+)*\s*:\s*)[A-Z]\w*(?:\.\w+)*\b/,lookbehind:!0,inside:{punctuation:/\./}},{pattern:/((?:\b(?:class|interface|new)\s+)|(?:catch\s+\())[A-Z]\w*(?:\.\w+)*\b/,lookbehind:!0,inside:{punctuation:/\./}}],number:/\b0x[\da-f]+\b|(?:\b\d+\.?\d*|\B\.\d+)f?/i,operator:/>>=?|<<=?|[-=]>|([-+&|?])\1|~|[-+*/%&|^!=<>]=?/,punctuation:/\?\.?|::|[{}[\];(),.:]/}),Prism.languages.insertBefore("csharp","class-name",{"generic-method":{pattern:/\w+\s*<[^>\r\n]+?>\s*(?=\()/,inside:{function:/^\w+/,"class-name":{pattern:/\b[A-Z]\w*(?:\.\w+)*\b/,inside:{punctuation:/\./}},keyword:Prism.languages.csharp.keyword,punctuation:/[<>(),.:]/}},preprocessor:{pattern:/(^\s*)#.*/m,lookbehind:!0,alias:"property",inside:{directive:{pattern:/(\s*#)\b(?:define|elif|else|endif|endregion|error|if|line|pragma|region|undef|warning)\b/,lookbehind:!0,alias:"keyword"}}}}),Prism.languages.dotnet=Prism.languages.cs=Prism.languages.csharp;
+Prism.languages.gdscript={comment:/#.*/,string:{pattern:/@?(?:("|')(?:(?!\1)[^\n\\]|\\[\s\S])*\1(?!"|')|"""(?:[^\\]|\\[\s\S])*?""")/,greedy:!0},"class-name":{pattern:/(^(?:class_name|class|extends)[ \t]+|^export\([ \t]*|\bas[ \t]+|(?:\b(?:const|var)[ \t]|[,(])[ \t]*\w+[ \t]*:[ \t]*|->[ \t]*)[a-zA-Z_]\w*/m,lookbehind:!0},keyword:/\b(?:and|as|assert|break|breakpoint|class|class_name|const|continue|elif|else|enum|export|extends|for|func|if|in|is|master|mastersync|match|not|null|onready|or|pass|preload|puppet|puppetsync|remote|remotesync|return|self|setget|signal|static|tool|var|while|yield)\b/,function:/[a-z_]\w*(?=[ \t]*\()/i,variable:/\$\w+/,number:[/\b0b[01_]+\b|\b0x[\da-fA-F_]+\b|(?:\b\d[\d_]*(?:\.[\d_]*)?|\B\.[\d_]+)(?:e[+-]?[\d_]+)?\b/,/\b(?:INF|NAN|PI|TAU)\b/],constant:/\b[A-Z][A-Z_\d]*\b/,boolean:/\b(?:false|true)\b/,operator:/->|:=|&&|\|\||<<|>>|[-+*/%&|!<>=]=?|[~^]/,punctuation:/[.:,;()[\]{}]/};
+</script>
+
+<!-- Begin actual document -->
+<!-- Title -->
+<h1>Intro to Godot</h1>
+<!-- Subtitle -->
+<h2>Workshop 6 Notes</h2>
+
+<h3>Outline</h3>
+<ul>
+<!--
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+-->
+	<li>Enemy Behavior</li>
+	<ul>
+		<li>Finding the Player</li>
+		<li>Signals</li>
+	</ul>
+	<li>UI</li>
+	<ul>
+		<li>Health Bar</li>
+		<li>Death Counter</li>
+	</ul>
+</ul>
+
+<!-- Sections -->
+<!--
+<h3></h3>
+<p></p>
+-->
+<h3>Enemy Behavior</h3>
+<p>Unsurprisingly, objects in games that have behaviour often need to access the player for one reason or another. In our case, we're making an enemy that wants to know where the player is in order to move towards them when they're in range, and we need to "damage" the player under certain conditions.</p>
+<p>The naïve approach would be to find the player's node when the enemy starts, and every frame check the distance between the player and the enemy. If the distance is small enough, the enemy would walk towards the player's position, or whatever enemy behavior you design. You might also damage the player if the distance between them is small enough that they are basically touching the enemy.</p>
+<p>While this approach would work for simple games, there are several problems with it. Let's say you had tons of this enemy in a level. When the level first starts, you'd have all of the enemies performing the same search for the player, which could be expensive if you have a lot of nodes in the scene. There are ways to reduce this cost (like making the player accessable via singleton), but as it turns out, this isn't what you want to be doing anyway. During the scene, you'd also have all these enemies doing math every frame to know how close the player is to their position.</p>
+<p>Think about this also from the player's perspective. If you implemented player attacking in this way, the player would have to also keep track of <i>every enemy</i>, and do the same calculation on every enemy to know which enemy is closest, and if their attack hits. That sounds like a really inefficient way to implement things. So we're going to do it differently!</p>
+<p>First, let's tackle finding the player efficiently. Let's write first what we wan't to do if the the player is close to us, without worrying how we're going to know.</p>
+<!--
+<pre><code class="language-gdscript"></code></pre>
+-->
+<pre><code class="language-gdscript">extends RigidBody2D
+
+export var speed: float = 1
+
+var is_target_in_range: bool = false
+var target: Node2D
+
+func _physics_process(delta: float):
+	if is_target_in_range:
+		target_in_range()
+
+func target_in_range():
+	var direction: Vector2 = target.global_position - global_position
+	set_linear_velocity(direction * speed)</code></pre>
+</body>
+<p>The script is pretty simple. We have a point in space (<code class="language-gdscript">Node2D</code>) that we will move towards at a given <code class="language-gdscript">speed</code>. However, obviously <code class="language-gdscript">is_target_in_range</code> and <code class="language-gdscript">target</code> are never set. If only we had some way to magically run a function when the player entered some defined area around us that would set <code class="language-gdscript">is_target_in_range</code> and <code class="language-gdscript">target</code>, and then when the player left that area, it would call a function to reset them. Well, if you though that, then you're in luck, because Godot lets us do pretty much exactly that.</p>
+<p>First, we need to define that <i>area</i> around the enemy. The node we need is called <code class="language-gdscript">Area2D</code>, and it works pretty much the same as <code class="language-gdscript">RigidBody2D</code> and <code class="language-gdscript">KinematicBody2D</code>, but without any physics-related behaviour. Make this area a child of the enemy's RigidBody2D, and give it a collider. That collider will be the physical area that, when the player enters it, the enemy will start moving towards the player.</p>
+<p>So how will this <code class="language-gdscript">Area2D</code> magically set our variables? The answer is through Signals.</p>
+<p>Signals are kind of like events combined with virtual functions, and they're used to run code when a specific thing has happened. Usually the code being run is on the root node in the prefab, and the event happens in a child node. In this case, a signal on the child is <i>connected</i> to a method on the root, and it the signal is <i>emitted</i> when the event happens. Signals often have arguments passed that give the signal some kind of context.</p>
+<p>If you click on the <code class="language-gdscript">Area2D</code> node, and open the tab labelled <code class="language-gdscript">Node</code> next to the <code class="language-gdscript">Inspector</code> tab, you'll see all of <code class="language-gdscript">Area2D</code>'s signals. The one's we're interested in are called <code class="language-gdscript">body_entered</code> and <code class="language-gdscript">body_exited</code>. Notice next to these names, there's a <code class="language-gdscript">PhysicsBody2D body</code> in parenthesis. These are arguments that will be passed to the connected methods. In this case, they will be the node that has entered or exited the area.</p>
+<p>Click on one of these functions, and click <code class="language-gdscript">Connect</code> in the lower-right. By default, the root of the scene will be selected. Click connect, and it will open that node's script. After doing this for both signals, your script should now look like this:</p>
+<pre><code class="language-gdscript">extends RigidBody2D
+
+export var speed: float = 1
+
+var is_target_in_range: bool = false
+var target: Node2D
+
+func _physics_process(delta: float):
+	if is_target_in_range:
+		target_in_range()
+
+func target_in_range():
+	var direction: Vector2 = target.global_position - global_position
+	set_linear_velocity(direction * speed)
+
+func _on_Area2D_body_entered(body: PhysicsBody2D) -> void:
+	pass # Replace with function body.
+
+func _on_Area2D_body_exited(body: PhysicsBody2D) -> void:
+	pass # Replace with function body.</code></pre>
+<p>Connecting the signals has automatically added the required methods to our script. Now all we need to do is replace the bodies with the code to set <code class="language-gdscript">is_target_in_range</code> and <code class="language-gdscript">target</code>!</p>
+<pre><code class="language-gdscript">func _on_Area2D_body_entered(body: PhysicsBody2D) -> void:
+	is_target_in_range = true
+	target = body
+
+func _on_Area2D_body_exited(body: PhysicsBody2D) -> void:
+	is_target_in_range = false
+	target = null</code></pre>
+<p>Now if you run the game, you'll see that it... doesn't work...</p>
+<p>The problem we've run into is that the enemy's <code class="language-gdscript">RigidBody2D</code> is entering the area immediately, and the enemy is setting itself as the target. There are 2 main ways to avoid this: Collision Layers and Groups. We'll be using Groups to get around this, but using layers would work just as well, and may be better in certain situations. However, it's a bit more complecated, so we'll stick with Groups for now.</p>
+<p>Groups are similar to Tags in Unity. Each node has a list of "Groups" that it is a part of. You can access this list in <code class="language-gdscript">Node->Groups</code>, next to the <code class="language-gdscript">Signals</code> panel. We need to add the player to the <code class="language-gdscript">Player</code> group, and only add objects of the <code class="language-gdscript">Player</code> group as the enemy's target. The code for that should look something like this (Be careful, group names are case sensitive):</p>
+<pre><code class="language-gdscript">func _on_Area2D_body_entered(body: PhysicsBody2D) -> void:
+	if "Player" in body.get_groups():
+		is_target_in_range = true
+		target = body
+
+func _on_Area2D_body_exited(body: PhysicsBody2D) -> void:
+	if "Player" in body.get_groups():
+		is_target_in_range = false
+		target = null</code></pre>
+<p>Damaging the player would be mostly the same deal; however, instead of using the <code class="language-gdscript">Area2D</code> signals, you would use the enemy's <code class="language-gdscript">RigidBody2D</code> signals (at least, if you wanted to hurt the player when touched by an enemy).</p>
+<h3>UI</h3>
+<p>UI in any game engine can get pretty complicated when you need to accommodate various screen sizes, aspect ratios, work with mice and controllers, and many other complexities. Obviously we can't cover everything that has to do with UI, but if you need to solve a specific problem, I'd highly recommend either searching for a <a href="https://docs.godotengine.org/en/3.1/getting_started/step_by_step/ui_game_user_interface.html">tutorial</a> or reading <a href="https://docs.godotengine.org/en/3.1/tutorials/gui/index.html">Godot's extensive UI documentation.</a></p>
+<p>UI in Godot (also called GUI for Graphical User Interface) is implemented with <code class="language-gdscript">Control</code> nodes. <code class="language-gdscript">Control</code> nodes are a sister to <code class="language-gdscript">Node2D</code>, both inheriting <code class="language-gdscript">CanvasItem</code>. This makes sense, as both are 2D objects being "drawn on the canvas", or in other words, pasted on the screen. The difference is that the positions of <code class="language-gdscript">Node2D</code> nodes are represented as offsets in pixels from the origin point in 2D space. The positions of <code class="language-gdscript">Control</code> nodes, however, are managed very differently, as they need to be positioned at various points on the screen independent of resolution or screen geometry. Additionally, UI is typically always above everything else in the scene.</p>
+<p><code class="language-gdscript">Control</code> nodes are typically children of a <code class="language-gdscript">CanvasLayer</code>, which can be used to have multiple ui layers with multiple CanvasLayers, rotate and scale the UI, and so on.</p>
+<p>To keep things simple, we're going to make the CanvasLayer a child of the player. This will make it easier for our UI to access the player, and vice versa.</p>
+<p>We're first going to make a "death counter" for the player. The node we'll use for this is called a <code class="language-gdscript">Label</code>, which is really just text. Once you add it as a child of the <code class="language-gdscript">CanvasLayer</code>, you'll want to add some text in it's text box in the inspector make it easier to see.</p>
+<p>Here is where I'd have a long section full of pictures and illustrations detailing how to position UI in Godot. <a href=https://docs.godotengine.org/en/3.1/tutorials/gui/gui_containers.html>However, there's already a tutorial for this in Godot's documentation that does it better than I could, so go read that.</a> You should also read the following tutorial on Containers if you're planning on doing any serious UI in Godot, but for now, just the anchors will do.</p>
+<p>Position the text however you like, then add a script to it. All the script really needs to do is, when the node starts, access the number of restarts from the singleton we made last time, and set the <code class="language-gdscript">text</code> property to it. You can set any string of text, or anything that can be interpreted as text, to the <code class="language-gdscript">Label</code>'s <code class="language-gdscript">text</code> property. Also, it's probably worth mentioning that Godot has string formatting similar to python, such that <code class="language-gdscript">"this is a number: %d" % 1</code> will evaluate to <code class="language-gdscript">"this is a number: 1"</code>.</p>
+<p>The node we want to use for the Health Bar is called a <code class="language-gdscript">Progress Bar</code>. For a real health bar, you'd likely want to use the <code class="language-gdscript">TextureProgress</code> node, but it's a little more complecated to set up, and works basically the same way. Set the progress bar's <code class="language-gdscript">value</code> to 100. To represent the player's health, in the player's script, you would get the progress bar on start, and when the function to hurt the player is called, you would set the <code class="language-gdscript">value</code> of the node to <code class="language-gdscript">(current_health / max_health) * 100</code>.</p>
+</html>
